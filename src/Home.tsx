@@ -98,20 +98,17 @@ const MintButtonContainer = styled.div`
   button.MuiButton-contained:not(.MuiButton-containedPrimary).Mui-disabled {
     color: #464646;
   }
-
   button.MuiButton-contained:not(.MuiButton-containedPrimary):hover,
   button.MuiButton-contained:not(.MuiButton-containedPrimary):focus {
     -webkit-animation: pulse 1s;
     animation: pulse 1s;
     box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
   }
-
   @-webkit-keyframes pulse {
     0% {
       box-shadow: 0 0 0 0 #ef8f6e;
     }
   }
-
   @keyframes pulse {
     0% {
       box-shadow: 0 0 0 0 #ef8f6e;
@@ -121,19 +118,16 @@ const MintButtonContainer = styled.div`
 
 const Logo = styled.div`
   flex: 0 0 auto;
-
   img {
-    height: 60px;
+    height: 96px;
   }
 `;
 const Menu = styled.ul`
   list-style: none;
   display: inline-flex;
   flex: 1 0 auto;
-
   li {
     margin: 0 12px;
-
     a {
       color: var(--main-text-color);
       list-style-image: none;
@@ -145,17 +139,14 @@ const Menu = styled.ul`
       touch-action: manipulation;
       transition: color 0.3s;
       padding-bottom: 15px;
-
       img {
         max-height: 26px;
       }
     }
-
     a:hover, a:active {
       color: rgb(131, 146, 161);
       border-bottom: 4px solid var(--title-text-color);
     }
-
   }
 `;
 
@@ -169,7 +160,6 @@ const SolExplorerLink = styled.a`
   outline: none;
   text-decoration: none;
   text-size-adjust: 100%;
-
   :hover {
     border-bottom: 2px solid var(--title-text-color);
   }
@@ -206,11 +196,11 @@ const Price = styled(Chip)`
   margin: 5px;
   font-weight: bold;
   font-size: 1.2em !important;
-  font-family: 'Patrick Hand', cursive !important;
+  font-family: 'Fight this', cursive !important;
 `;
 
 const Image = styled.img`
-  height: 400px;
+  height: 470px;
   width: auto;
   border-radius: 7px;
   box-shadow: 5px 5px 40px 5px rgba(0,0,0,0.5);
@@ -227,7 +217,6 @@ const BorderLinearProgress = styled(LinearProgress)`
   > div.MuiLinearProgress-barColorPrimary{
     background-color:var(--title-text-color) !important;
   }
-
   > div.MuiLinearProgress-bar1Determinate {
     border-radius: 30px !important;
     background-image: linear-gradient(270deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.5));
@@ -256,10 +245,9 @@ const GoldTitle = styled.h2`
 const LogoAligner = styled.div`
   display: flex;
   align-items: center;
-
   img {
-    max-height: 35px;
-    margin-right: 10px;
+    max-height: 108px;
+    margin-right: 20px;
   }
 `;
 
@@ -549,15 +537,11 @@ const Home = (props: HomeProps) => {
         <main>
             <MainContainer>
                 <WalletContainer>
-                    <Logo><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer"><img alt=""
-                                                                                                          src="logo.png"/></a></Logo>
+                    <Logo><a href="https://gatorfightclub.com/" target="_blank" rel="noopener noreferrer"><img alt=""
+                                                                                                          src="logo999.png"/></a></Logo>
                     <Menu>
-                        <li><a href="http://localhost:3000/" target="_blank" rel="noopener noreferrer">Menu 1</a>
+                        <li><a href="#howtomint" target="" rel="noopener noreferrer">How to mint ?</a>
                         </li>
-                        <li><a href="http://localhost:3000/" target="_blank"
-                               rel="noopener noreferrer">Menu 2</a></li>
-                        <li><a href="http://localhost:3000/" target="_blank"
-                               rel="noopener noreferrer">Menu 3</a></li>
                     </Menu>
                     <Wallet>
                         {wallet ?
@@ -565,16 +549,16 @@ const Home = (props: HomeProps) => {
                             <ConnectButton>Connect Wallet</ConnectButton>}
                     </Wallet>
                 </WalletContainer>
-                <ShimmerTitle>MINT IS LIVE !</ShimmerTitle>
+                <ShimmerTitle>GENESIS IS LIVE !</ShimmerTitle>
                 <br/>
                 <MintContainer>
                     <DesContainer>
                         <NFT elevation={3}>
-                            <h2>My NFT</h2>
+                            <h2 id="nam">Gator Fight Club</h2>
                             <br/>
                             <div><Price
                                 label={isActive && whitelistEnabled && (whitelistTokenBalance > 0) ? (whitelistPrice + " " + priceLabel) : (price + " " + priceLabel)}/><Image
-                                src="cool-cats.gif"
+                                src="Gatorv2.gif"
                                 alt="NFT To Mint"/></div>
                             <br/>
                             {wallet && isActive && whitelistEnabled && (whitelistTokenBalance > 0) && isBurnToken &&
@@ -658,31 +642,15 @@ const Home = (props: HomeProps) => {
                     </DesContainer>
                     <DesContainer>
                         <Des elevation={2}>
-                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>TITLE 1</GoldTitle></LogoAligner>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                        </Des>
-                        <Des elevation={2}>
-                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>TITLE 2</GoldTitle></LogoAligner>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                        </Des>
-                        <Des elevation={2}>
-                            <LogoAligner><img src="logo.png" alt=""></img><GoldTitle>TITLE 3</GoldTitle></LogoAligner>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.</p>
+                            <LogoAligner><img src="logo999.png" alt="" className="log"></img><GoldTitle>How to mint ?</GoldTitle></LogoAligner>
+                            <p id="howtomint">
+                            1. - Collect your WL token by sending us your Phantom address on the Discord group following the instructions in the pinned message in the Whitelisted-chat.<br/>
+                            2. - Connect your Solana wallet to the mint website.<br/> 
+                            3. - Mint your NFT(s)<br/><br/>
+                            If you get an error message, refresh the page.<br/> 
+                            Make sure you have enough SOL to cover the transaction fees.<br/> <br/>
+                            If you have any problem during the mint, open a ticket in our Discord group ! 
+                            </p>
                         </Des>
                     </DesContainer>
                 </MintContainer>

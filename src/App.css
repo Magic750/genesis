@@ -1,19 +1,59 @@
-/* Customize your main colors in :root variables */
+@import url(//db.onlinewebfonts.com/c/0974a64f5d38ba18867b4cf659fa0df1?family=Fight+This);
+@font-face {font-family: "Fight This"; src: url("//db.onlinewebfonts.com/t/0974a64f5d38ba18867b4cf659fa0df1.eot"); src: url("//db.onlinewebfonts.com/t/0974a64f5d38ba18867b4cf659fa0df1.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0974a64f5d38ba18867b4cf659fa0df1.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0974a64f5d38ba18867b4cf659fa0df1.woff") format("woff"), url("//db.onlinewebfonts.com/t/0974a64f5d38ba18867b4cf659fa0df1.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0974a64f5d38ba18867b4cf659fa0df1.svg#Fight This") format("svg"); }
+
+
 :root {
-  --main-background-color: #343A50;
-  --card-background-color: #51576D;
-  --card-background-lighter-color: #7A7F92;
-  --main-text-color:#F7F6F4;
-  --title-text-color:#3CBA8B;
+  --main-background-color: #ebd9d9fb;
+  --card-background-color: #565864d7;
+  --card-background-lighter-color: #000000;
+  --main-text-color:#eb0808;
+  --title-text-color:#000000;
+  
 }
 
 body{
-  background-color:var(--main-background-color);
-  /*background: url("img/background.png");
-  background-size: cover;*/
+  background: url("./img/bggg.d7f89df6.jpg");
 
-  font-family: 'Patrick Hand', cursive;
-  font-size: 1.1em;
+  font-family: 'Aldrich' !important;
+  font-size: 1.2em;
+}
+
+span, h1 {
+  font-family: "Fight this"!important;
+}
+
+li{
+  font-family: "Fight this"!important;
+  font-size: 2.0em;
+}
+
+.bkQfAZ{
+  font-size: 2.5em;
+}
+
+#nam{
+  font-family: 'Aldrich' !important;
+  font-size: 1.5em;
+}
+
+
+h2{
+  font-family: 'Fight this'!important;
+  font-size: 2em;
+}
+
+.log{
+  width: 80px;
+  height: 85px;
+}
+
+.MuiButton-label{
+  color: #eb0808;
+}
+
+a{
+  color: var(--main-text-color);
+  text-decoration: none;
 }
 
 h2, p{
@@ -23,6 +63,5 @@ h2, p{
 h3{
 font-weight: normal;
 }
-
 
 
